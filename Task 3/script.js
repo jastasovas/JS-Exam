@@ -17,7 +17,6 @@ document.getElementById("btn").addEventListener("click", (e) => {
     .then((response) => response.json())
     .then((data) => {
       renderUsers(data);
-      console.log(data);
     });
   function renderUsers(users) {
     const otpt = document.getElementById("output");
