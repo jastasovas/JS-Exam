@@ -37,3 +37,20 @@
   width: 80%;
   padding: 20px;
 }
+
+#brandCard {
+  width: 40%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px;
+}
+
+#output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -15,7 +15,6 @@ fetch("./cars.json")
   .then((response) => response.json())
   .then((data) => {
     renderCars(data);
-    console.log(data);
   });
 
 function renderCars(cars) {
@@ -27,7 +26,7 @@ function renderCars(cars) {
     card.id = "brandCard";
     brandModels.id = "models";
     carBrand.textContent = car.brand;
-    brandModels.textContent = car.models;
+    brandModels.textContent = car.models.join(", ");
     out.append(card);
     card.append(carBrand, brandModels);
   });
